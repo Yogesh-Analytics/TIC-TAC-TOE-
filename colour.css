@@ -1,40 +1,3 @@
-/* h1{
-    color: rgb(66, 66, 4);
-}
-button{
-    color: wheat;
-    background-color: brown;
-
-}
-
-h3{
-    color:blue
-} */
-/* body{
-    background-color: pink;
-}
-
-#box1{
-    background-color: brown;
-    color: burlywood;
-    height: 200px;
-    width: 200px;
-    border: 5px solid black;
-} */
-
-
-
-/* #box1{
-    background-color: brown;
-    color: burlywood;
-    height: 200px;
-    width: 200px;
-    border: 5px solid black;
-} 
- */
-
-
-
 
 *{
     padding: 0;
@@ -44,6 +7,10 @@ h3{
 body{
     background-color: maroon;
     text-align: center;
+    background-image: url("image.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 
@@ -60,8 +27,8 @@ body{
 
 
 .game{
-    height:60vmin;
-    width: 60vmin;
+    height:45vmin;
+    width: 45vmin;
     display: flex;
     flex-wrap: wrap;
     gap: 1.5vmin;
@@ -74,43 +41,59 @@ body{
 .box{
     background-color: beige;
     color: black;
-    height: 18vmin;
-    width: 18vmin;
+    height: 13vmin;
+    width: 13vmin;
     border-radius:40px ;
-    font-size: 8vmin;
-    box-shadow: 0 0 1rem black(0,0,0,0.1);
+    font-size: 6vmin;
+    box-shadow: 0 0 1rem rgba(0,0,0,0.1);
     cursor: pointer;
     transition: 0.2s;
     /* border: 2px solid rgb(230, 184, 2); */
 }
 
+.box:hover{
+    transform: scale(1.04);
+}
+
 
 h1{
-    margin-top: 5rem;
-    font-size: 200px;
+    margin-top: 2rem;
+    font-size: 60px;
+    color: wheat;
     text-align: center;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 #reset-btn{
-    padding: 5rem;
-    font-size: 5rem;
+    padding: 1.2rem;
+    font-size: 1.5rem;
     border-radius: 2rem;
     background-color: black;
     color: wheat;
     border: none;
+    cursor: pointer;
+    transition: 0.3s;
     
 }
 
 #NewGameBtn{
-    padding: 5rem;
-    font-size: 5rem;
+    padding: 1.2rem;
+    font-size: 1.5rem;
     border-radius: 2rem;
     background-color: black;
     color: wheat;
     border: none;
+    cursor: pointer;
+    transition: 0.3s;
 
 }
+
+#reset-btn:hover,
+#NewGameBtn:hover{
+    background-color: wheat;
+    color: black;
+}
+
 footer {
     display: flex;
     justify-content: center;
@@ -118,13 +101,20 @@ footer {
 }
 
 #msg{
-    padding: 5vmin;
+    padding: 1rem;
     color: wheat;
     font-size: 4vmin;
+    text-align: center;
 }
+
 .msgContain{
     height: 10vmin;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 .hide{
     display: none;
 }

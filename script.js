@@ -85,6 +85,5 @@ const checkWIN=()=>{
     }
 };
 
-
 rstbtn.addEventListener("click", resetGame);
 NewGameBtn.addEventListener("click", resetGame);

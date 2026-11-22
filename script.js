@@ -9,6 +9,8 @@ let msgContain=document.querySelector(".msgContain");
 
 let msg=document.querySelector("#msg");
 
+
+
 let trunO=true;
 let WinningPatterns=[[0,1,2],
               [3,4,5],
@@ -25,8 +27,6 @@ const resetGame=()=>{
     enabledboxes();
     msgContain.classList.add("hide");
 };
-
-
 
 
 boxes.forEach((box)=>{
